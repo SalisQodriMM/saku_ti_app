@@ -76,12 +76,12 @@ Dokumen ini berisi langkah-langkah lengkap untuk menjalankan *source code* aplik
 
 ---
 
-##### 📋 Prasyarat (Requirements)
+#### 📋 Prasyarat (Requirements)
 
 Sebelum memulai, pastikan komputer Anda sudah terinstal:
 1.  **Flutter SDK** (Versi 3.0 atau lebih baru).
 2.  **Editor Code** (VS Code atau Android Studio).
-3.  **JDK (Java Development Kit)** (Diperlukan untuk generate SHA-1).
+3.  **Akun Google** (Digunakan untuk login app)
 
 ---
 
