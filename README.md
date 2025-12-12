@@ -70,20 +70,16 @@ Menggunakan **Firebase REST API**. Data disimpan secara terisolasi berdasarkan U
 
 ## 🛠️ Panduan Instalasi & Setup SAKTI
 
-Dokumen ini berisi langkah-langkah lengkap untuk menjalankan *source code* aplikasi **SAKTI (Saku TI)** di komputer lokal Anda (Localhost).
+Ikuti petunjuk ini untuk mendapatkan salinan proyek dan menjalankannya di mesin lokal Anda untuk keperluan pengembangan dan pengujian.
 
+**📋 Prasyarat (Requirements)** 
 
-#### 📋 Prasyarat (Requirements)
-
-Sebelum memulai, pastikan komputer Anda sudah terinstal:
 1.  **Flutter SDK** (Versi 3.0 atau lebih baru).
 2.  **Editor Code** (VS Code atau Android Studio).
 3.  **Akun Google** (Digunakan untuk login app)
 
 
 ## 🚀 Langkah Instalasi
-
-Ikuti urutan langkah di bawah ini dengan teliti.
 
 1. Clone Repository
 
