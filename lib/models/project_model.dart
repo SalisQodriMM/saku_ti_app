@@ -1,23 +1,22 @@
-import 'timeline_model.dart'; // Pastikan timeline_model sudah ada
+import 'timeline_model.dart';
 
 class ProjectModel {
   String id;
   String title;
   String startDate;
   String endDate;
-  List<TimelineModel> timelines; // Kita pakai List, bukan angka manual
+  List<TimelineModel> timelines;
 
   ProjectModel({
     required this.id,
     required this.title,
     required this.startDate,
     required this.endDate,
-    required this.timelines, // Constructor hanya minta ini
+    required this.timelines, 
   });
 
-  // --- BAGIAN INI YANG PENTING ---
   // Menghitung jumlah tugas secara otomatis dari List timelines
-  // Jadi kita tidak perlu menginput angka manual lagi
+  // kita tidak perlu menginput angka manual lagi
   int get completedTasks => timelines.where((t) => t.isCompleted).length;
   int get totalTasks => timelines.length;
 

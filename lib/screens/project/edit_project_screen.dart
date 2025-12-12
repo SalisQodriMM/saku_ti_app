@@ -54,7 +54,7 @@ class _EditProjectScreenState extends State<EditProjectScreen> {
   }
 
   void _pickDate(TextEditingController controller) async {
-    // ... (sama seperti tambah screen) ...
+    // sama seperti tambah screen
     DateTime? picked = await showDatePicker(
       context: context,
       initialDate: DateTime.now(),

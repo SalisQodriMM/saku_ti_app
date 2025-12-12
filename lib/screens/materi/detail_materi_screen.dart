@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart'; // Import ini
+import 'package:url_launcher/url_launcher.dart';
 import '../../models/book_model.dart';
 
 class DetailMateriScreen extends StatelessWidget {
@@ -97,7 +97,7 @@ class DetailMateriScreen extends StatelessWidget {
                           _buildInfoRow("Penulis", book.authors.join(", ")),
                           _buildInfoRow("Kategori", book.categories.join(", ")),
                           _buildInfoRow("Terbit", book.publishedDate),
-                          _buildInfoRow("ISBN", book.isbn), // Info Baru
+                          _buildInfoRow("ISBN", book.isbn),
 
                           const Divider(height: 30),
 
@@ -131,7 +131,7 @@ class DetailMateriScreen extends StatelessWidget {
                     child: ElevatedButton.icon(
                       onPressed: book.infoLink.isNotEmpty ? _launchUrl : null,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF536DFE), // Warna Biru
+                        backgroundColor: const Color(0xFF536DFE),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),

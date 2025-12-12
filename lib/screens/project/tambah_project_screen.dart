@@ -3,7 +3,6 @@ import '../../services/database_service.dart';
 import '../../services/auth_service.dart';
 import '../../models/project_model.dart';
 import '../../models/timeline_model.dart';
-// import '../../widgets/loading_widget.dart';
 
 class TambahProjectScreen extends StatefulWidget {
   const TambahProjectScreen({super.key});
@@ -169,7 +168,7 @@ class _TambahProjectScreenState extends State<TambahProjectScreen> {
                     child: ElevatedButton(
                       onPressed: _saveProject,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF3F51B5), // Biru Gelap
+                        backgroundColor: const Color(0xFF3F51B5),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                       ),
                       child: const Text("Simpan", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),

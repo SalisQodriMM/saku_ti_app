@@ -6,7 +6,6 @@ import '../models/project_model.dart';
 import '../models/note_model.dart';
 
 class DatabaseService {
-  // GANTI URL INI DENGAN MILIK ANDA (Tanpa slash di akhir)
   static const String _baseUrl =
       'https://sakti-app-12410-default-rtdb.asia-southeast1.firebasedatabase.app';
 

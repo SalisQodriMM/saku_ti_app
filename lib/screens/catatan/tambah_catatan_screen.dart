@@ -60,7 +60,7 @@ class _TambahCatatanScreenState extends State<TambahCatatanScreen> {
             width: double.infinity,
             height: double.infinity, // Full screen container
             decoration: BoxDecoration(
-              color: const Color(0xFF00C48C), // Background Hijau
+              color: const Color(0xFF00C48C), 
               borderRadius: BorderRadius.circular(20),
             ),
             child: SingleChildScrollView(

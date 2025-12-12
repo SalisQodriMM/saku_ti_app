@@ -5,7 +5,7 @@ import '../services/database_service.dart';
 import '../models/project_model.dart';
 import '../models/todo_model.dart';
 import '../widgets/loading_widget.dart';
-import '../widgets/realtime_clock.dart'; // Pastikan widget jam sudah ada
+import '../widgets/realtime_clock.dart';
 
 class HomeScreen extends StatefulWidget {
   final Function(int) onNavigate;
@@ -29,12 +29,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // --- FUNGSI REFRESH ---
   Future<void> _refreshData() async {
-    // Kita cukup panggil setState.
-    // Ini akan memicu ulang build(), sehingga FutureBuilder akan
+    // memicu ulang build(), sehingga FutureBuilder akan
     // memanggil DatabaseService lagi untuk mengambil data terbaru.
     setState(() {});
 
-    // Sedikit delay agar animasi loading terlihat natural
     await Future.delayed(const Duration(milliseconds: 1500));
   }
 
@@ -42,13 +40,12 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      // 1. BUNGKUS DENGAN REFRESH INDICATOR
+      // BUNGKUS DENGAN REFRESH INDICATOR
       body: RefreshIndicator(
         onRefresh: _refreshData,
         color: const Color(0xFF2F6BFF), // Warna loading biru
         backgroundColor: Colors.white,
         child: SingleChildScrollView(
-          // 2. WAJIB ADA PHYSICS INI
           // Agar layar bisa ditarik (bounce) meskipun kontennya pendek
           physics: const AlwaysScrollableScrollPhysics(),
           child: Column(

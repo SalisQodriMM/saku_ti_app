@@ -123,7 +123,7 @@ class _EditCatatanScreenState extends State<EditCatatanScreen> {
                   ),
                   const SizedBox(height: 30),
 
-                  // Row Tombol: Hapus (Merah) & Simpan (Hijau Tua/Kuning)
+                  // Row Tombol: Hapus & Simpan
                   Row(
                     children: [
                       Expanded(

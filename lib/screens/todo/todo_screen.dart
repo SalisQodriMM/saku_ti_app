@@ -83,9 +83,8 @@ class _TodoScreenState extends State<TodoScreen> {
               // Jika Selesai (isCompleted) -> Hijau
               // Jika Belum -> Kuning
               Color cardColor = todo.isCompleted
-                  ? const Color(0xFF00C48C) // Hijau (Selesai)
-                  : const Color(0xFFFFD54F); // Kuning (Belum)
-
+                  ? const Color(0xFF00C48C)
+                  : const Color(0xFFFFD54F);
               return Container(
                 margin: const EdgeInsets.only(bottom: 16),
                 decoration: BoxDecoration(
@@ -173,7 +172,7 @@ class _TodoScreenState extends State<TodoScreen> {
                         width: 60,
                         height: 90,
                         decoration: const BoxDecoration(
-                          color: Color(0xFF536DFE), // Biru
+                          color: Color(0xFF536DFE),
                           borderRadius: BorderRadius.only(
                             topRight: Radius.circular(16),
                             bottomRight: Radius.circular(16),

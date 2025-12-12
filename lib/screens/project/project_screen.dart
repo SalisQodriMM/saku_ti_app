@@ -4,8 +4,7 @@ import '../../services/database_service.dart';
 import '../../services/auth_service.dart';
 import '../../models/project_model.dart';
 import '../../widgets/custom_app_bar.dart';
-// import '../../widgets/loading_widget.dart';
-import '../../widgets/project_card.dart'; // Pastikan widget ini ada
+import '../../widgets/project_card.dart';
 import 'tambah_project_screen.dart';
 import 'detail_project_screen.dart';
 
@@ -70,13 +69,12 @@ class _ProjectScreenState extends State<ProjectScreen> {
       body: Column(
         children: [
           const SizedBox(height: 20),
-          // Container Biru Besar (Background List)
           Expanded(
             child: Container(
               width: double.infinity,
               padding: const EdgeInsets.only(top: 24, left: 24, right: 24),
               decoration: const BoxDecoration(
-                color: Color(0xFF536DFE), // Warna Biru Project
+                color: Color(0xFF536DFE),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),

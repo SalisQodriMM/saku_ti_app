@@ -50,7 +50,7 @@ class _EditTodoScreenState extends State<EditTodoScreen> {
       title: _titleController.text,
       matkul: _matkulController.text,
       deadline: _dateController.text,
-      isCompleted: widget.todo.isCompleted, // Status checklist tetap sama
+      isCompleted: widget.todo.isCompleted,
     );
 
     await DatabaseService().updateTodo(user.uid, updatedTodo);
@@ -99,7 +99,7 @@ class _EditTodoScreenState extends State<EditTodoScreen> {
               margin: const EdgeInsets.all(24),
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: const Color(0xFFFFD54F), // Background Kuning
+                color: const Color(0xFFFFD54F),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Column(
@@ -140,7 +140,7 @@ class _EditTodoScreenState extends State<EditTodoScreen> {
                         child: ElevatedButton(
                           onPressed: _deleteTodo,
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFFEF5350), // Merah
+                            backgroundColor: const Color(0xFFEF5350),
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                           ),
                           child: const Text("Hapus", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),

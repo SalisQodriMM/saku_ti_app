@@ -44,24 +44,21 @@ class _MainScaffoldState extends State<MainScaffold> {
       extendBody: true,
 
       body: IndexedStack(index: _selectedIndex, children: _pages),
-
-      // --- PERBAIKAN DI SINI ---
       // Bungkus dengan SafeArea agar tidak tertutup tombol sistem HP
       bottomNavigationBar: SafeArea(
         child: Container(
           height: 72, // Tinggi Bar
-          // Tambahkan Margin agar bar "melayang" dan tidak nempel pinggir/bawah
+          // Margin agar bar "melayang" dan tidak nempel pinggir/bawah
           margin: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
           padding: const EdgeInsets.symmetric(horizontal: 4),
           decoration: BoxDecoration(
-            color: const Color(0xFF2F6BFF), // Warna Biru Utama
-            // Buat sudutnya membulat penuh (kapsul)
+            color: const Color(0xFF2F6BFF),
             borderRadius: BorderRadius.circular(40),
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(
                   0.3,
-                ), // Bayangan lebih gelap dikit
+                ),
                 blurRadius: 20,
                 offset: const Offset(0, 10),
               ),

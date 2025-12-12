@@ -75,7 +75,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     : null,
               ),
               child: !isLoggedIn
-                  ? const SizedBox() // Kosong jika belum login (sesuai desain)
+                  ? const SizedBox() // Kosong jika belum login
                   : null,
             ),
 

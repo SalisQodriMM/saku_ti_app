@@ -27,7 +27,6 @@ class _TambahTodoScreenState extends State<TambahTodoScreen> {
     );
 
     if (pickedDate != null) {
-      // Format sederhana: DD-MM-YYYY
       String formattedDate = "${pickedDate.day}-${pickedDate.month}-${pickedDate.year}";
       _dateController.text = formattedDate;
     }
@@ -74,11 +73,11 @@ class _TambahTodoScreenState extends State<TambahTodoScreen> {
               margin: const EdgeInsets.all(24),
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: const Color(0xFFFFD54F), // Background Kuning
+                color: const Color(0xFFFFD54F),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Column(
-                mainAxisSize: MainAxisSize.min, // Agar tidak full screen height
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   _buildInput(_titleController, "Nama Tugas"),
                   const SizedBox(height: 16),
@@ -107,7 +106,7 @@ class _TambahTodoScreenState extends State<TambahTodoScreen> {
                     child: ElevatedButton(
                       onPressed: _saveTodo,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF8D6E63), // Warna Coklat/Gelap sesuai desain
+                        backgroundColor: const Color(0xFF8D6E63),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                       ),
                       child: const Text("Simpan", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),

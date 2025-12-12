@@ -45,7 +45,6 @@ class _MateriScreenState extends State<MateriScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      // Custom AppBar dengan logo
       appBar: const CustomAppBar(title: "Materi"),
       body: Column(
         children: [

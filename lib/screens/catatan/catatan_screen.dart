@@ -23,7 +23,7 @@ class _CatatanScreenState extends State<CatatanScreen> {
     super.initState();
     _currentUser = AuthService().currentUser;
 
-    // 2. WAJIB ADA: Dengarkan jika user Login/Logout dari Home
+    // WAJIB ADA: Dengarkan jika user Login/Logout dari Home
     AuthService().authStateChanges.listen((user) {
       if (mounted) {
         setState(() {
@@ -107,7 +107,7 @@ class _CatatanScreenState extends State<CatatanScreen> {
                   padding: const EdgeInsets.all(20),
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: const Color(0xFF00C48C), // Warna Hijau Sesuai Desain
+                    color: const Color(0xFF00C48C),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Column(
@@ -117,7 +117,7 @@ class _CatatanScreenState extends State<CatatanScreen> {
                         note.title,
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 18, // Judul agak besar
+                          fontSize: 18,
                           color: Colors.white,
                         ),
                       ),
