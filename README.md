@@ -1,5 +1,10 @@
 # 🎓 SAKTI (Saku TI)
-**Aplikasi Asisten Akademik Mahasiswa Teknik Informatika**
+
+**Aplikasi Asisten Akademik Mahasiswa Teknik Informatika** 
+
+![Flutter](https://img.shields.io/badge/Flutter-3.0%2B-blue?logo=flutter)
+![Firebase](https://img.shields.io/badge/Firebase-Auth%20%26%20Realtime%20DB-orange?logo=firebase)
+![Architecture](https://img.shields.io/badge/Architecture-Service--Repository-green)
 
 Aplikasi ini adalah "Academic Hub" berbasis mobile yang dibangun menggunakan **Flutter**. Tujuan utamanya adalah membantu mahasiswa Teknik Informatika mengelola materi kuliah, catatan, tugas, dan timeline proyek dalam satu aplikasi terintegrasi.
 
