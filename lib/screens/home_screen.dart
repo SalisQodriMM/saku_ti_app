@@ -148,10 +148,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return FutureBuilder<List<ProjectModel>>(
       future: DatabaseService().getProjects(_currentUser!.uid),
       builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting)
+        if (snapshot.connectionState == ConnectionState.waiting) {
           return const LoadingWidget();
-        if (!snapshot.hasData || snapshot.data!.isEmpty)
+        }
+        if (!snapshot.hasData || snapshot.data!.isEmpty) {
           return _buildEmptyMessage("Belum ada project.");
+        }
 
         final projects = snapshot.data!.take(2).toList();
 
@@ -219,10 +221,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return FutureBuilder<List<TodoModel>>(
       future: DatabaseService().getTodos(_currentUser!.uid),
       builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting)
+        if (snapshot.connectionState == ConnectionState.waiting) {
           return const LoadingWidget();
-        if (!snapshot.hasData || snapshot.data!.isEmpty)
+        }
+        if (!snapshot.hasData || snapshot.data!.isEmpty) {
           return _buildEmptyMessage("Belum ada tugas.");
+        }
 
         final todos = snapshot.data!.take(2).toList();
 

@@ -19,7 +19,7 @@ class _EditProjectScreenState extends State<EditProjectScreen> {
   late TextEditingController _endController;
 
   // List Controller + Status Selesai
-  List<Map<String, dynamic>> _timelinesData = [];
+  final List<Map<String, dynamic>> _timelinesData = [];
   bool _isLoading = false;
 
   @override
@@ -61,8 +61,9 @@ class _EditProjectScreenState extends State<EditProjectScreen> {
       firstDate: DateTime(2020),
       lastDate: DateTime(2030),
     );
-    if (picked != null)
+    if (picked != null) {
       controller.text = "${picked.day}-${picked.month}-${picked.year}";
+    }
   }
 
   void _updateProject() async {

@@ -141,6 +141,7 @@ class _DetailProjectScreenState extends State<DetailProjectScreen> {
                         ),
                       );
                       // Refresh parent (Project Screen) when back
+                      // ignore: use_build_context_synchronously
                       if (mounted) Navigator.pop(context);
                     },
                     style: ElevatedButton.styleFrom(
@@ -188,6 +189,7 @@ class _DetailProjectScreenState extends State<DetailProjectScreen> {
                             user.uid,
                             _project.id,
                           );
+                          // ignore: use_build_context_synchronously
                           if (mounted) Navigator.pop(context); // Kembali ke list project
                         }
                       }
