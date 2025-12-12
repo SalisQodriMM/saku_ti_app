@@ -10,8 +10,6 @@ Aplikasi ini adalah "Academic Hub" berbasis mobile yang dibangun menggunakan **F
 
 Aplikasi ini menerapkan konsep **Pemisahan Logika & UI** (Service-Repository Pattern), serta menggunakan **HTTP Request** manual (REST API) untuk semua pertukaran data guna memenuhi standar pemahaman backend yang mendalam.
 
----
-
 ## 📱 Fitur Utama
 
 🔐 **Lazy Login (Google Auth)**
@@ -74,7 +72,6 @@ Menggunakan **Firebase REST API**. Data disimpan secara terisolasi berdasarkan U
 
 Dokumen ini berisi langkah-langkah lengkap untuk menjalankan *source code* aplikasi **SAKTI (Saku TI)** di komputer lokal Anda (Localhost).
 
----
 
 #### 📋 Prasyarat (Requirements)
 
@@ -83,7 +80,6 @@ Sebelum memulai, pastikan komputer Anda sudah terinstal:
 2.  **Editor Code** (VS Code atau Android Studio).
 3.  **Akun Google** (Digunakan untuk login app)
 
----
 
 ## 🚀 Langkah Instalasi
 
